@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.header {
+    background-image: url('../images/header_pic.jpeg');
+    background-size: cover;
+    height: 37.5rem;
+}
+.logo > img {
+    
+}
+.navbar {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.651);
+}
+.navigation {
+    display: flex;
+    
+}
+.navigation > li {
+    list-style: none;
+}
+.nav_link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5625rem;
+    font-weight: bold;
+    padding: 1.75rem 1.25rem;
+    margin: 0 .3125rem;
+}
+.nav_link:hover {  
+    background:rgb(255, 0, 0);
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.header_description {
+    background: #fff;
+    margin-right: 2.5rem;
+    padding: 1.25rem;
+    width: 31.25rem;
+    height: 21.875rem;
+    float: right;
+    position: relative;
+    top: 9.5rem;
+    right: 1.25rem;
+}
+.header_description p:nth-child(3) {
+    text-align: center;
+}
+.header_description .badg {
+    padding: 0;margin: 0;
+    background: #ff5252;
+    width: 6.25rem;
+    height: 2.5rem;
+    position: relative;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.badg i {
+    font-size: 1.8rem;
+}
+.header_description > h1 {
+    margin-top: 0;  
+    letter-spacing: .3125rem;  
+    text-align: center;
+}
+.descrip_tb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-person-booth, .fa-shower, .fa-crop-alt {
+    color: #ff5252;
+    margin-right: .7rem;
+}
+.descrip_tb div p {
+    margin: 0;
+}
+.prix_titl {
+    margin-bottom: .7rem;
+}
+.prix {
+    color: #ff5252;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+
+/* /////////////   CONTAINER  ///////////////////*/
+main {
+    background-image: url('../images/bg_contact.png');
+    display: flex;
+    justify-content: center;
+    padding:10% 30%;
+}
+.contact {
+    width: 43.75rem;
+    border-radius: 2.5rem;
+}
+.header_contact {
+    text-align: center;
+    color: #fff;
+    padding: .625rem 1.25rem;
+    background-image: url('../images/contact_us2.jpg');
+    background-size: cover;
+    font-weight: bold;
+}
+.header_contact > h1 {
+}
+.main_contact {
+    padding: 1.25rem 2.5rem;
+    background: #fff;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 1.25rem 0;
+}
+.form input {
+    border-top: none;border-left: none;border-right: none;
+    font-size: 1rem;
+}
+.form input:focus {
+    border:none;
+    outline: none;
+}
+.form label {
+    text-align: end;
+    margin-right: 1.875rem;
+}
+.form textarea {
+    border-top: 0;border-right: none;border-left: none;
+}
+.form textarea:focus {
+    outline: none;
+}
+.button {
+    text-align: center;
+}
+.btn {
+    column-rule: #fff;
+    padding: .625rem 1.875rem;
+    font-size: 1.25rem;
+    background: #e74c3c;
+    border-radius:1.25rem;
+    border: none;
+    color: #fff;
+}
+
+
+/*  //////////////////////    FOOTER  ////////////////////*/
+footer {
+    background: #ff5252;
+    color: #fff;
+    padding: 1.25rem 1.875rem;
+}
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social a > * {
+    font-size: 2.5rem;
+    margin:0 1.25rem;
+}
+.footer_bottom {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.fa-facebook-square {
+    color: #3b5999;
+}
+.fa-twitter-square {
+    color: #55acee;
+}
+.fa-linkedin {
+    color: #0077B5;
+}
+.fb-right {
+    display: flex;
+    
+}
+.fb-right p {
+    margin: 0 .625rem;
+}
+hr {
+    margin: 1.25rem 0;
+}
+
+
+/*//////////////////   CONTAINER   //////////////////////*/
+@media only screen and (max-width:470px) {
+    .contact {
+        width: 18rem;
+    }
+    .form input {
+        padding-bottom: .625rem;
+        font-size: .7rem;
+    }
+    .btn {
+        font-size: .7rem;
+    }
+    .title_contact {
+        font-size: .9rem;
+    }
+    .header_contact p {
+        font-size: .7rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////  HEADER AND FOOTER RESPONSIVE   /////////////*/
+@media only screen and (max-width:1006px) {
+    body {
+        font-size: 12px;
+    }
+    .header_description {
+        height: 18rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        font-size: 13px;
+    }
+    .header {
+        height: 25rem;
+    }
+    .header_description {
+        width: auto;
+        text-align: center;
+        right: 0;
+        top: 2rem;
+        height: 17rem;
+    }
+    .descrip_tb div {
+        font-size: .7rem;
+        margin: 0 .5rem;
+    }
+    .nav_link {
+        font-size: .7rem;
+        padding: 0;margin: 0 .5rem;
+    }
+    .header_description h1 {
+        font-size: 1rem;
+    }
+    footer {
+        padding: 1rem;
+        font-size: 8px;
+    }
+    .fb-left {
+        margin-right: 1rem;
+    }
+    .logo img {
+        width: 90px;
+        height: auto;
+    }
+}
